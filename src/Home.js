@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import PostList from "./PostList";
 
 export default function Home() {
   const [posts, setPosts] = useState([
@@ -7,14 +8,14 @@ export default function Home() {
     { id: 3, title: "Third post", content: "lorem ipsum", author: "Sevro" },
   ]);
 
+  function handleDelete(postId) {
+    const newPosts = posts.filter((post) => post.id !== postId);
+    setPosts(newPosts);
+  }
+
   return (
     <div className="home">
-      {posts.map((post) => (
-        <div className="blog-preview" key={post.id}>
-          <h2>{post.title}</h2>
-          <p>By {post.author}</p>
-        </div>
-      ))}
+      <PostList posts={posts} title="All Blogs" handleDelete={handleDelete} />
     </div>
   );
 }
