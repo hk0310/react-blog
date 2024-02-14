@@ -3,14 +3,14 @@ import { useHistory } from "react-router-dom/";
 
 export default function Create() {
   const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
+  const [body, setBody] = useState("");
   const [author, setAuthor] = useState("Khai");
   const [isPending, setIsPending] = useState(false);
   const history = useHistory();
 
   function handleSubmit(e) {
     e.preventDefault();
-    const post = { title, content, author };
+    const post = { title, body, author };
 
     setIsPending(true);
 
@@ -38,8 +38,8 @@ export default function Create() {
 
         <label>Content: </label>
         <textarea
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
           required
         ></textarea>
 

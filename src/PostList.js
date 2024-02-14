@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function PostList({ posts, title, handleDelete }) {
+export default function PostList({ posts, title }) {
   return (
     <div className="post-list">
       <h2>{title}</h2>
@@ -9,7 +9,6 @@ export default function PostList({ posts, title, handleDelete }) {
           <Link to={`/posts/${post.id}`}>
             <h2>{post.title}</h2>
             <p>By {post.author}</p>
-            <button onClick={() => handleDelete(post.id)}>Delete</button>
           </Link>
         </div>
       ))}
