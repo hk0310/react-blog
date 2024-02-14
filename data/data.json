@@ -1,16 +1,28 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "My First Post",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "author": "Khai"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "My Second Post",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "author": "Darrow"
+    },
+    {
+      "id": "eaf9",
+      "title": "abc",
+      "content": "abd",
+      "author": "Khai"
+    },
+    {
+      "id": "51ff",
+      "title": "abdsfa",
+      "content": "def",
+      "author": "Khai"
     }
   ]
 }

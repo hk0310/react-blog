@@ -16,7 +16,7 @@ export default function BlogDetails() {
       {post && (
         <article>
           <h2>{post.title}</h2>
-          <p>Writtern by {post.author}</p>
+          <p>By {post.author}</p>
           <div>{post.body}</div>
         </article>
       )}
