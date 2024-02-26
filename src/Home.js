@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="home">
       {error && <div>{error}</div>}
-      {isPending && <div>Loading...</div>}
+      {isPending && <div>Loading post data...</div>}
       {posts && <PostList posts={posts} title="All Blogs" />}
     </div>
   );
